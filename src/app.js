@@ -5,7 +5,9 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const jsx = (
-    <Router />
+    <div>
+        <Router />
+    </div>
 );
 
  ReactDOM.render(jsx, document.getElementById('app'));
