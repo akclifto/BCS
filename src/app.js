@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from "./components/Router";
+import Router from "./routes/Router";
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
