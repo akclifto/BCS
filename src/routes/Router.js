@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import BCSDashboard from "../components/containers/BCSDashboard";
+import BCSDashboard from "../containers/BCSDashboard";
 import Account from "../components/Account";
 import Checkout from "../components/Checkout";
 import Donate from "../components/Donate";
