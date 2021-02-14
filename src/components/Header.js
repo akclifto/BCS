@@ -5,10 +5,10 @@ const Header = () => (
     <header>
         <h1>Best Community Services</h1>
         <NavLink to="/" activeClassName="is-active" exact={true}> Dashboard</NavLink>  |
-        <NavLink to="/Services" activeClassName="is-active"> Services</NavLink>  |
-        <NavLink to="/Volunteer" activeClassName="is-active"> Volunteer</NavLink>  |
-        <NavLink to="/Donate" activeClassName="is-active"> Donate</NavLink>  |
-        <NavLink to="/Login" activeClassName="is-active"> Login</NavLink>  |
+        <NavLink to="/services" activeClassName="is-active"> Services</NavLink>  |
+        <NavLink to="/volunteer" activeClassName="is-active"> Volunteer</NavLink>  |
+        <NavLink to="/donate" activeClassName="is-active"> Donate</NavLink>  |
+        <NavLink to="/login" activeClassName="is-active"> Login</NavLink>  |
     </header>
 
 );

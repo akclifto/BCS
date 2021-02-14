@@ -2,9 +2,9 @@ const path = require('path');
 
 // entry point (app.js) -> output final bundle file
 module.exports = {
-    mode : 'development',
+    mode: 'development',
     entry: './src/app.js',
-    output : {
+    output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
@@ -21,10 +21,11 @@ module.exports = {
                 'css-loader',
                 'sass-loader'
             ]
-        } ]
+        }]
     },
-    devtool: 'eval-cheap-module-source-map',
+    devtool: 'eval-source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true
     }
 };
