@@ -1,0 +1,89 @@
+body {
+    color: #404040;
+};
+
+.login {
+    background: white;
+    border-radius: 3px;
+    box-align: center;
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    position: relative;
+    padding: 20px 20px 20px;
+    width: 310px;
+    -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.login h1 {
+    margin: -20px -20px 21px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $login_grey;
+    text-align: center;
+    text-shadow: 0 1px white;
+    background: $lightblue;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+    background-image: -webkit-linear-gradient(top, $off-white);
+    background-image: -moz-linear-gradient(top, $off-white);
+    background-image: -o-linear-gradient(top, $off-white);
+    background-image: linear-gradient(to bottom, $off-white);
+    -webkit-box-shadow: 0 1px whitesmoke;
+    box-shadow: 0 1px whitesmoke;
+}
+
+.login p {
+    margin: 20px 0 0 0;
+}
+
+.login p.submit__login {
+    text-align: right;
+    margin-right: 12px;
+  }
+
+.login p:first-child {
+    margin-top: 0;
+}
+
+.login input[type=text], .login input[type=password] {
+    width: 278px;
+  }
+  
+
+.login__emailPass {
+    color:$login_grey;
+    text-align: center;
+}   
+
+.help-login {
+    margin: 10px 0 0 0;
+    font-size: 11px;
+    color: $login_grey;
+    text-align: center;
+}
+
+.help-login__links {
+    box-align:relative;
+}
+
+.help-login a {
+    text-decoration: none;
+    color: $login_grey;
+}
+.help-login a:hover {
+    text-decoration: underline;
+    color: $login_grey;
+}
