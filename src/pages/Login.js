@@ -8,7 +8,7 @@ export default class Login extends React.Component {
         holder_pass: undefined,
     }
 
-    onSubmit_login = (e) => {
+    onSubmit_login = () => {
         history.push("/");
     }
 
@@ -54,10 +54,10 @@ export default class Login extends React.Component {
                     <div className="help-login">
                         <div className="help-login__links">
                             <p>
-                                <a href="#">Forgot password?</a>
+                                <a href="/recover-account">Forgot password?</a>
                             </p>
                             <p>
-                                <a href="#">New User?  Sign up here.</a>
+                                <a href="/signup">New User?  Sign up here.</a>
                             </p>
                         </div>
                     </div>
