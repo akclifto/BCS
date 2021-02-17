@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import history from './history';
+import history from '../components/history';
 
 export default class Login extends React.Component {
 
@@ -38,18 +37,18 @@ export default class Login extends React.Component {
                                     placeholder="Password"
                                 />
                             </p>
-                            </form>
-                            <form className="form__button">
-                                <p className="login___button">
-                                    <button
-                                        type="submit"
-                                        name="login_button"
-                                        value="Login"
-                                        onClick={this.onSubmit_login}
-                                    > Login
+                        </form>
+                        <form className="form__button">
+                            <p className="login___button">
+                                <button
+                                    type="submit"
+                                    name="login_button"
+                                    value="Login"
+                                    onClick={this.onSubmit_login}
+                                > Login
                                         </button>
-                                </p>
-                            </form>
+                            </p>
+                        </form>
                     </div>
 
                     <div className="help-login">
