@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import BCSDashboard from "../components/BCSDashboard";
 import Account from "../pages/Account";
 import Checkout from "../pages/Checkout";
 import Donate from "../pages/Donate";
+import Landing from "../pages/Landing";
 import LayoutTemplate from "../containers/LayoutTemplate";
 import Login from "../pages/Login";
-import Header from "../components/Header";
 import PageNotFound from '../pages/PageNotFound';
 import Services from '../pages/Services';
 import Volunteer from '../pages/Volunteer';
@@ -18,7 +17,7 @@ const Router = () => (
         <div>
             <LayoutTemplate>
                 <Switch>
-                    <Route exact path="/" component={BCSDashboard} />
+                    <Route exact path="/" component={Landing} />
                     <Route path="/account" component={Account} />
                     <Route path="/checkout" component={Checkout} />
                     <Route path="/donate" component={Donate} />
