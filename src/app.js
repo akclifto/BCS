@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 import Router from "./routes/router";
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
@@ -13,5 +14,5 @@ const App = () => (
     </div>
 );
 
-ReactDOM.render(App, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
  

@@ -15,7 +15,8 @@
     "start": "node server/server.js",
     "buildd": "webpack --config=webpack.dev.js",
     "buildp": "webpack --config=webpack.prod.js",
-    "dev": "webpack serve --open --config=webpack.dev.js",
+    "dev": "webpack serve  --config=webpack.dev.js",
+    "devo": "webpack serve --open --config=webpack.dev.js",
     "heroku:postbuild": "yarn run buildp"
   },
   "dependencies": {
