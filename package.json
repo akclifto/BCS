@@ -6,12 +6,15 @@
   "repository": "https://github.com/akclifto/BCS.git",
   "author": "Adam Clifton (akclifto@asu.edu)",
   "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "server": "node server/server.js",
-    "build": "webpack",
-    "buildp": "webpack -p --env production",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev": "webpack serve --mode development",
-    "heroku:postbuild": "yarn run buildp"
+    "heroku:postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
