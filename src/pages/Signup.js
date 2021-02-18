@@ -48,7 +48,7 @@ export default class Signup extends React.Component {
                                     type="text"
                                     name="user_name"
                                     value={this.props.user_name}
-                                    placeholder="Give yourself a public user name"
+                                    placeholder="Give yourself a public username"
                                 />
                             </p>
                             <p>
