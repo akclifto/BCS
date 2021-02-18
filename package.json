@@ -12,7 +12,7 @@
     "yarn": "1.22.x"
   },
   "scripts": {
-    "server": "node server/server.js",
+    "start": "node server/server.js",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev": "webpack serve --mode development",
