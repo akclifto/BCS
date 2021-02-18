@@ -13,10 +13,11 @@
   },
   "scripts": {
     "start": "node server/server.js",
-    "buildd": "webpack --config=webpack.dev.js",
-    "buildp": "webpack --config=webpack.prod.js",
+    "build:dev": "webpack --config=webpack.dev.js",
+    "build:prod": "webpack --config=webpack.prod.js",
     "dev": "webpack serve  --config=webpack.dev.js",
     "devo": "webpack serve --open --config=webpack.dev.js",
+
 
   },
   "dependencies": {
