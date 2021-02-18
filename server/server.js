@@ -2,7 +2,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const publicPath = path.join(__dirname, '..', 'public');
+const publicPath = path.join(__dirname, '..', 'public', 'dist');
 const port = process.env.PORT || 3000;
 
 // middleware:  some code that runs for each request. set it up with app.use();
