@@ -17,7 +17,7 @@
     "buildp": "webpack --config=webpack.prod.js",
     "dev": "webpack serve  --config=webpack.dev.js",
     "devo": "webpack serve --open --config=webpack.dev.js",
-    "heroku:prebuild": "yarn run buildp"
+
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
