@@ -30,7 +30,7 @@ module.exports = {
     }),
   ],
   output: {
-    path: path.join(__dirname, 'public', 'dist'),
+    path: path.resolve(__dirname, 'public', 'dist'),
     filename: '[name].bundle.js',
   },
 };
