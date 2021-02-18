@@ -12,8 +12,7 @@ import Signup from '../pages/Signup';
 import RecoverAcct from '../pages/Recover_Acct';
 import Volunteer from '../pages/Volunteer';
 
-
-const Routes = () => (
+export default () => (
 
     <BrowserRouter>
         <div>
@@ -34,5 +33,3 @@ const Routes = () => (
         </div>
     </BrowserRouter>
 );
-
-export default Routes;
