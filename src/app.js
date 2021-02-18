@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './routes/router';
+import Routes from './routes/router';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
@@ -11,7 +11,7 @@ if(process.env.NODE_ENV !== 'production'){
 
 const App = () => (
     <div>
-        <Router />
+        <Routes />
     </div>
 );
 

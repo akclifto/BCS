@@ -13,7 +13,7 @@ import RecoverAcct from '../pages/Recover_Acct';
 import Volunteer from '../pages/Volunteer';
 
 
-export default () => (
+const Routes = () => (
 
     <BrowserRouter>
         <div>
@@ -34,3 +34,5 @@ export default () => (
         </div>
     </BrowserRouter>
 );
+
+export default Routes;

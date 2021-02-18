@@ -1,10 +1,20 @@
 import React from 'react';
 
 const BCSDashboard = () => (
-    <div>
-        <h1>
-            This is the start of the BCS Dashboard.
-        </h1>
+    
+    <div className="container">
+        <div className="services__dash">
+            Services
+        </div>
+        <div className="donations__dash">
+            donations
+        </div>
+        <div className="volunteer__dash">
+            volunteer
+        </div>
+        <div className="community__dash">
+            community
+        </div>
     </div>
 );
 
