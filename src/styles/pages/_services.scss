@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+//margin params:  top right bottom left
 
 .service__container {
     margin: 0;
@@ -54,13 +55,14 @@ body {
 
 .service__component-list {
     font-size: $m-size;
-    margin: 5px;
-    margin-top: 10px;
+    color: $login_grey;
+    margin: 10px 0px 10px 5px;
     font-weight: bold;
 }
 
 .service__list--item {
     text-decoration: none;
+    margin-left: 20px;
     color: $login_grey;
 }
 

@@ -8,6 +8,7 @@ import LayoutTemplate from "../containers/LayoutTemplate";
 import Login from "../pages/Login";
 import PageNotFound from '../pages/PageNotFound';
 import Services from '../pages/Services';
+import ServiceItemInfo from '../pages/ServiceItemInfo';
 import Signup from '../pages/Signup';
 import RecoverAcct from '../pages/Recover_Acct';
 import Volunteer from '../pages/Volunteer';
@@ -24,6 +25,7 @@ export default () => (
                     <Route path="/login" component={Login} />
                     <Route path="/recover-account" component={RecoverAcct} />
                     <Route path="/services" component={Services} />
+                    <Route path="/service-item-info" component={ServiceItemInfo} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/volunteer" component={Volunteer} />
                     <Route component={PageNotFound} />
