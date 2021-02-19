@@ -25,7 +25,7 @@ module.exports = {
       pages: path.resolve(__dirname, 'src/pages'),
       browser: path.resolve(__dirname, 'src/routes'),
       routes: path.resolve(__dirname, 'src/routes'), 
-        router: path.resolve(__dirname, 'src/routes/router.js'),
+        router: path.resolve(__dirname, 'src/routes/router'),
       styles: path.resolve(__dirname, 'src/styles'),
     },
   },
