@@ -13,11 +13,10 @@
   },
   "scripts": {
     "start": "node server/server.js",
+    "build": "webpack --config=webpack.prod.js",
     "buildd": "webpack --config=webpack.dev.js",
-    "buildp": "webpack --config=webpack.prod.js",
     "dev": "webpack serve --config=webpack.dev.js",
-    "devo": "webpack serve --open --config=webpack.dev.js",
-    "heroku-postbuild": "yarn run buildp"
+    "devo": "webpack serve --open --config=webpack.dev.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
