@@ -5,7 +5,7 @@ const ServiceItemInfo = (props) => {
 
     return (
         <div className="container">
-            
+
             <div className="serviceItem">
                 <h3 className="serviceItem__head">Service Item: NAMED-ITEM placeholder</h3>
                 <div className="serviceItem__descr">
@@ -14,6 +14,21 @@ const ServiceItemInfo = (props) => {
                         <p>{randomText()}</p>
                         <p>{randomText()}</p>
                         <p>{randomText()}</p>
+                    </div>
+                </div>
+
+                <div className="serviceItem__descr">
+                    Pricing:
+                    <div className="serviceItem__text">
+                        <p>{randomText()}</p>
+                    </div>
+                </div>
+
+                <div className="serviceItem__descr">
+                    Availability:
+                    <div className="serviceItem__text">
+                            <p>{randomText()}</p>
+                            <p>{randomText()}</p>
                     </div>
                 </div>
             </div>

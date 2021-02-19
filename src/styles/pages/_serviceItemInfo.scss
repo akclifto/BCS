@@ -11,8 +11,12 @@ body {
 
 .serviceItem {
     border: 1px solid;
+    border-radius: 5px;
+    width: 95%;
     margin: 10px;
     overflow: auto;
+    background-color: white;
+    position: center;
 
 }
 
