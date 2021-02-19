@@ -1,5 +1,5 @@
 import React from 'react';
-import BCSDashboard from '../components/BCSDashboard';
+import BCSDashboard from './BCSDashboard';
 
 const Landing = () => <BCSDashboard />
 
