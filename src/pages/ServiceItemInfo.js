@@ -1,35 +1,54 @@
 import React from 'react';
 import { randomText } from '../components/randomLorem';
 
-const ServiceItemInfo = (props) => {
+const ServiceItemInfo = () => {
 
     return (
         <div className="container">
-
             <div className="serviceItem">
-                <h3 className="serviceItem__head">Service Item: NAMED-ITEM placeholder</h3>
-                <div className="serviceItem__descr">
-                    More in depth information about selected service item:
-                    <div className="serviceItem__text">
-                        <p>{randomText()}</p>
-                        <p>{randomText()}</p>
-                        <p>{randomText()}</p>
-                    </div>
-                </div>
 
-                <div className="serviceItem__descr">
-                    Pricing:
-                    <div className="serviceItem__text">
-                        <p>{randomText()}</p>
-                    </div>
-                </div>
-
-                <div className="serviceItem__descr">
-                    Availability:
-                    <div className="serviceItem__text">
+                <div className="serviceItem__component">
+                    <div className="serviceItem__head">Service Item: NAMED-ITEM placeholder</div>
+                    <div className="serviceItem__descr">
+                        More in depth information about selected service item:
+                        <div className="serviceItem__text">
                             <p>{randomText()}</p>
                             <p>{randomText()}</p>
+                            <p>{randomText()}</p>
+                        </div>
                     </div>
+
+                    <div className="serviceItem__descr">
+                        Pricing:
+                        <div className="serviceItem__text">
+                            <p>{randomText()}</p>
+                        </div>
+                    </div>
+
+                    <div className="serviceItem__descr">
+                        Availability:
+                        <div className="serviceItem__text">
+                            <p>{randomText()}</p>
+                            <p>{randomText()}</p>
+                        </div>
+                    </div>
+
+                    <div className="serviceItem__selection">
+
+                        Select a date(s) to reserve:
+                        <button
+                            className="serviceItem__date--button"
+                            onClick={(() => {
+                                alert("date selection via calendar range to go here.");
+                            })}
+                        >
+                            MM/DD/YYYY
+                        </button>
+                        <button className="serviceItem__cart--button">
+                            Add to Cart
+                            </button>
+                    </div>
+
                 </div>
             </div>
         </div>
