@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './routes/router.js';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-if(process.env.NODE_ENV !== 'production'){
+if (process.env.NODE_ENV !== 'production') {
     console.log("We are in development mode!");
 }
 
 const App = () => (
-    <div>
+    <BrowserRouter>
         <AppRouter />
-    </div>
+    </BrowserRouter>
 );
 
 ReactDOM.render(<App />, document.getElementById('app'));
- 
+

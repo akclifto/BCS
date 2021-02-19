@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Account from "../pages/Account";
 import Checkout from "../pages/Checkout";
 import Donate from "../pages/Donate";
@@ -14,7 +14,6 @@ import Volunteer from '../pages/Volunteer';
 
 export default () => (
 
-    <BrowserRouter>
         <div>
             <LayoutTemplate>
                 <Switch>
@@ -31,5 +30,5 @@ export default () => (
                 </Switch>
             </LayoutTemplate>
         </div>
-    </BrowserRouter>
+
 );
