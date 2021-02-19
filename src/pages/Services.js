@@ -1,11 +1,13 @@
 import React from 'react';
+import { randomText, randomHeadline } from '../components/randomLorem';
 
 const Services = () => (
 
-    <div>
-        <h1>
-            This is the services page!
-        </h1>
+    <div className="container">
+    
+        <div className="service_component">
+        
+        </div>
     </div>
 );
 
