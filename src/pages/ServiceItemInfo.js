@@ -44,7 +44,12 @@ const ServiceItemInfo = () => {
                         >
                             MM/DD/YYYY
                         </button>
-                        <button className="serviceItem__cart--button">
+                        <button 
+                            className="serviceItem__cart--button"
+                            onClick={(() => {
+                                alert("Item to be added to cart functionality.");
+                            })}
+                            >
                             Add to Cart
                             </button>
                     </div>
