@@ -8,14 +8,10 @@ const lorem = [
 
 export const randomText = () => {
     const getLine = Math.floor(Math.random() * lorem.length);
-    // console.log(`getLine: ${getLine}`);
     const min = 20;
     const getLength = Math.floor((Math.random() * lorem[getLine].length) + min);
-    // console.log(`getLength: ${getLength}`);
     const sub = Math.floor((Math.random() * lorem[getLine].length) - (min + 1));
-    // console.log(`sub: ${sub}`);
     const randoLorem = lorem[getLine].substring(sub, getLength);
-    // console.log(`result: ${randoLorem}`);
     return randoLorem;
 };
 

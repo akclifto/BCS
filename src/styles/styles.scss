@@ -1,6 +1,7 @@
 @import './base/settings';
 @import './base/base';
 @import './components/header';
-@import './components/login_signup';
-@import './components/BCSDashboard';
+@import './pages/login_signup';
+@import './pages/BCSDashboard';
+@import './pages/services'
 

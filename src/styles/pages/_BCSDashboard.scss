@@ -6,8 +6,9 @@ body {
     margin: 0;
     padding: 0;
     position: fixed;
-    height: 100%;
+    height: 90%;
     width: 100%;
+    overflow: auto;
 }
 
 .dash {
@@ -83,6 +84,7 @@ body {
         overflow: auto;
     }
     .container {
+        height: 90%;
         overflow: auto;
         // margin-bottom: 20px;
     }
