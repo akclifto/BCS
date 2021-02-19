@@ -42,7 +42,7 @@ export default class RecoverAcct extends React.Component {
                                     type="text"
                                     name="login"
                                     value={this.email}
-                                    placeholder="Enter your account email address"
+                                    placeholder="Enter your account email"
                                 />
                             </p>
                         </form>
