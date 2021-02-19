@@ -19,6 +19,11 @@
     "devo": "webpack serve --open --config=webpack.dev.js"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/core": "7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.17",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -42,11 +47,6 @@
     "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.12.13",
-    "@babel/plugin-transform-runtime": "^7.12.17",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10"
   },
   "browserslist": {
     "production": [
