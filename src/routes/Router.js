@@ -15,22 +15,22 @@ import Volunteer from '../pages/Volunteer';
 
 export default () => (
 
-        <div>
-            <LayoutTemplate>
-                <Switch>
-                    <Route exact path="/" component={Landing} />
-                    <Route path="/account" component={Account} />
-                    <Route path="/checkout" component={Checkout} />
-                    <Route path="/donate" component={Donate} />
-                    <Route path="/login" component={Login} />
-                    <Route path="/recover-account" component={RecoverAcct} />
-                    <Route path="/services" component={Services} />
-                    <Route path="/service-item-info" component={ServiceItemInfo} />
-                    <Route path="/signup" component={Signup} />
-                    <Route path="/volunteer" component={Volunteer} />
-                    <Route component={PageNotFound} />
-                </Switch>
-            </LayoutTemplate>
-        </div>
+    <div>
+        <LayoutTemplate>
+            <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route path="/account" component={Account} />
+                <Route path="/checkout" component={Checkout} />
+                <Route path="/donate" component={Donate} />
+                <Route path="/login" component={Login} />
+                <Route path="/recover-account" component={RecoverAcct} />
+                <Route path="/services" component={Services} />
+                <Route path="/service-item-info" component={ServiceItemInfo} />
+                <Route path="/signup" component={Signup} />
+                <Route path="/volunteer" component={Volunteer} />
+                <Route component={PageNotFound} />
+            </Switch>
+        </LayoutTemplate>
+    </div>
 
 );

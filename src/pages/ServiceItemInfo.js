@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ServiceItemInfo = () => (
-    <div>
-        item infor page!
+const ServiceItemInfo = (props) => (
+    <div className="container">
+        item info page!
     </div>
 );
 
