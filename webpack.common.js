@@ -23,6 +23,7 @@ module.exports = {
       components: path.resolve(__dirname, 'src/components'),
       containers: path.resolve(__dirname, 'src/containers'),
       pages: path.resolve(__dirname, 'src/pages'),
+      browser: path.resolve(__dirname, 'src/routes'),
       routes: path.resolve(__dirname, 'src/routes'), 
         router: path.resolve(__dirname, 'src/routes/router.js'),
       styles: path.resolve(__dirname, 'src/styles'),
