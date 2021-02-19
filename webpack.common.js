@@ -18,6 +18,20 @@ module.exports = {
       ]
     }]
   },
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      containers: path.resolve(__dirname, 'src/containers/'),
+      pages: path.resolve(__dirname, 'src/pages/'),
+      routes: path.resolve(__dirname, 'src/routes/'),
+      styles: path.resolve(__dirname, 'src/styles/'),
+    },
+    // extensions: [
+    //   "js",
+    //   "jsx",
+    //   "json",
+    // ],
+  },
   plugins: [
     // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
     new CleanWebpackPlugin(),
