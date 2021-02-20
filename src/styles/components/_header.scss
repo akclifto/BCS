@@ -80,6 +80,29 @@ body {
     transform: scale(1.08);
 }
 
+.cart__nav {
+    background-color: white;
+    color: $header_blue;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    margin-top: 4px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.cart__nav:hover {
+    background-color:white;
+}
+
+.cart__img {
+    width: 25px;
+    height: auto;
+}
+
 
 
 @media (max-width: $desktop-breakpoint) {
@@ -91,6 +114,11 @@ body {
     }
 
     .header__nav {
+        float: none;
+        display: block;
+    }
+
+    .cart__nav {
         float: none;
         display: block;
     }

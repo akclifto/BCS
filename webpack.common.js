@@ -16,6 +16,12 @@ module.exports = {
         'css-loader',
         'sass-loader',
       ]
+    }, {
+      test: /\.(png|jpe?g|gif|webp)$/i,
+      use: [
+        'file-loader?name=[name].[ext].webp!webp-loader?{quality: 65}',
+        'file-loader?name=[name].[ext]',
+      ],
     }]
   },
   resolve: {
@@ -24,7 +30,7 @@ module.exports = {
       containers: path.resolve(__dirname, 'src/containers'),
       pages: path.resolve(__dirname, 'src/pages'),
       browser: path.resolve(__dirname, 'node_modules/@types/react-router-dom/index.d.ts'),
-      routes: path.resolve(__dirname, 'src/routes'), 
+      routes: path.resolve(__dirname, 'src/routes'),
       styles: path.resolve(__dirname, 'src/styles'),
     },
   },
