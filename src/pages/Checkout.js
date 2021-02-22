@@ -72,8 +72,7 @@ export default class Signup extends React.Component {
                                         {totalRandomCost()}
                                     </div>
                                 </div>
-         
-
+                                
                             </div>
                             <p>
                                 <input

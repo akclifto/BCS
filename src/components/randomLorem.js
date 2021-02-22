@@ -26,12 +26,22 @@ export const randomHeadline = () => {
     return headline;
 };
 
+let totalRandCost = [];
+
 export const randomCost = () => {
 
-    const cost = Math.floor(Math.random() * 100)
-    const pennies = Math.floor(Math.random() * 99);
-    const randomCost =  "$" + cost + "." + pennies;
-    console.log(randomCost);
-    return randomCost;
+    const cost = ((Math.random() * 99 + 1) + Math.random()).toFixed(2);
+    // console.log(cost);
+    totalRandCost.push(cost);
+    return cost;
 
+};
+
+export const totalRandomCost = () => {
+    let total = 0;
+    for(let i = 0; i < totalRandCost.length; i++) {
+        total += parseFloat(totalRandCost[i]);
+        // console.log(total.toFixed(2));
+    };
+    return total.toFixed(2);
 };
