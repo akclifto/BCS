@@ -51,82 +51,53 @@ export default class Signup extends React.Component {
                                 Checkout Details:
                             </p>
                             <div className="checkout__items">
-                                Item(s) in Card:
+                                Item(s) in Cart:
                                 <div className="checkout__itemsInfo">
                                     <li>{randomHeadline()}</li>
                                     <ul className="checkout__itemsCost">
-                                        {randomCost()}
+                                        ${randomCost()}
                                     </ul>
                                     <li className="checkout__itemsInfo">{randomHeadline()}</li>
                                     <ul className="checkout__itemsCost">
-                                        {randomCost()}
+                                        ${randomCost()}
                                     </ul>
                                     <li className="checkout__itemsInfo">{randomHeadline()}</li>
                                     <ul className="checkout__itemsCost">
-                                        {randomCost()}
+                                        ${randomCost()}
                                     </ul>
                                 </div>
                                 <div className="checkout__total-left">
                                     Total: 
                                     <div className="checkout__total-right">
-                                        {totalRandomCost()}
+                                        ${totalRandomCost()}
                                     </div>
                                 </div>
-                                
+                            </div>
+
+                            <div className="checkout__confirm">
+                                <p className="checkout__confirm--head">
+                                    Confirm account password:
+                                </p>
                             </div>
                             <p>
                                 <input
-                                    type="text"
-                                    name="email"
-                                    value={this.holder_email}
-                                    placeholder="Email"
-                                />
-                            </p>
-                            <p>
-                                <input
-
-                                    type="number"
-                                    name="phone"
-                                    pattern="[0-9]{10}"
-                                    value={this.phone}
-                                    placeholder="Phone Number"
-                                />
-                            </p>
-                            <p>
-                                <input
                                     type="password"
                                     name="password"
-                                    value={this.password}
-                                    placeholder="Password"
-                                />
-                            </p>
-                            <p>
-                                <input
-                                    type="password"
-                                    name="password"
-                                    value={this.confirm_password}
                                     placeholder="Confirm Password"
                                 />
                             </p>
+                            
                         </form>
                         <form className="form__button">
-                            <p className="login___button">
+                            <p className="checkout___button">
                                 <button
                                     type="submit"
                                     name="submit_button"
                                     onClick={this.onSubmit_signup}
-                                > Create Account
-                                        </button>
+                                > Place Order
+                                </button>
                             </p>
                         </form>
-                    </div>
-
-                    <div className="help-login">
-                        <div className="help-login__links">
-                            <p>
-                                <a href="/login">Already have an account? Click here.</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>

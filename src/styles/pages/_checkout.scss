@@ -82,19 +82,21 @@ body {
 .checkout__total-left {
     font-weight:bold;
     position: left;
+    float: left;
 }
 .checkout__total-right {
     font-weight:bold;
-    position: right;
+    position: absolute;
+    right:25px;
 }
 
 .login p:first-child {
     margin-top: 0;
 }
 
-.login input[type=text],
-.login input[type=number],
-.login input[type=password] {
+.checkout input[type=text],
+.checkout input[type=number],
+.checkout input[type=password] {
     width: 300px;
   }
   
@@ -102,40 +104,11 @@ body {
 .checkout__payment {
     color:$login_grey;
     text-align: center;
+    margin-bottom: 10px;
 }   
 
-.help-login {
-    margin: 10px 0 0 0;
-    font-size: 11px;
-    color: $login_grey;
-    text-align: center;
-}
-
-.help-login__links {
-    box-align:relative;
-}
-
-.help-login a {
-    text-decoration: none;
-    color: $login_grey;
-
-    .help-login a:hover {
-        cursor: pointer;
-    }
-}
-
-.help-login p {
-    margin: 5px 0 0 0;
-}
-
-.help-login a:hover {
-    text-decoration: underline;
-    color: $login_grey;
-}
-
-.recover_status {
-    color: rgb(4, 119, 13);
-    font-size: $s-size;
+.checkout__confirm{
+    padding-top: 20px;
 }
 
 input[type=text], 
@@ -175,6 +148,11 @@ button[type=submit] {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+  }
+
+  button[type=submit]:hover {
+      border: 3px solid;
+    border-color: $money_green;
   }
   
 button[type=submit]:active {
