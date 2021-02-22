@@ -25,3 +25,13 @@ export const randomHeadline = () => {
     }
     return headline;
 };
+
+export const randomCost = () => {
+
+    const cost = Math.floor(Math.random() * 100)
+    const pennies = Math.floor(Math.random() * 99);
+    const randomCost =  "$" + cost + "." + pennies;
+    console.log(randomCost);
+    return randomCost;
+
+};
