@@ -1,5 +1,4 @@
 import React from 'react';
-import history from '../components/history';
 
 export default class Donate extends React.Component {
 
@@ -12,10 +11,6 @@ export default class Donate extends React.Component {
         customDonate: "",
         isActive: false,
         totalDonation: 0,
-    }
-
-    onSubmit_checkout = () => {
-        history.push("/checkout");
     }
 
     onChange_donate = (e) => {
@@ -134,7 +129,9 @@ export default class Donate extends React.Component {
                                     type="submit"
                                     name="checkout_button"
                                     value="Checkout"
-                                    onClick={this.onSubmit_checkout}
+                                    onClick={(() => {
+                                        this.props.history.push("/checkout");
+                                    })}
                                     > Checkout
                                 </button>
                             </p>
