@@ -19,8 +19,9 @@ module.exports = {
     }, {
       test: /\.(png|jpe?g|gif|webp)$/i,
       use: [
-        'file-loader?name=[name].[ext].webp!webp-loader?{quality: 65}',
-        'file-loader?name=[name].[ext]',
+        'file-loader',
+        // 'file-loader?name=[name].[ext].webp!webp-loader?{quality: 65}',
+        // 'file-loader?name=[name].[ext]',
       ],
     }]
   },

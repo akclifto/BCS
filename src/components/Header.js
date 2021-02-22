@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import cart from "../resources/Shopping-Cart-Icons35.png";
+import cart from "../resources/cart.png";
 
 let auth = false;
 const ifAuth = () => {
@@ -41,7 +41,7 @@ const Header = () => (
                 <NavLink to="/donate" activeClassName="is-active" className="nav"> Donate</NavLink>
                 {ifAuth()}
                 <NavLink to="/checkout" activeClassName="is-active" className="cart__nav">
-                    <img className="cart__img" src={cart} />
+                    <img className="cart__img" src={cart} alt="checkout" />
                 </NavLink>
             </div>
         </div>

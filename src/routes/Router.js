@@ -12,6 +12,7 @@ import ServiceItemInfo from '../pages/ServiceItemInfo';
 import Signup from '../pages/Signup';
 import RecoverAcct from '../pages/Recover_Acct';
 import Volunteer from '../pages/Volunteer';
+import VolunteerItemInfo from '../pages/VolunteerItemInfo';
 
 export default () => (
 
@@ -28,6 +29,7 @@ export default () => (
                 <Route path="/service-item-info" component={ServiceItemInfo} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/volunteer" component={Volunteer} />
+                <Route path="/volunteer-item-info" component={VolunteerItemInfo} />
                 <Route component={PageNotFound} />
             </Switch>
         </LayoutTemplate>

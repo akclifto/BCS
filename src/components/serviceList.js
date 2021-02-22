@@ -43,3 +43,8 @@ export const spaces = [
     {id: indexList(), name:"Wedding Venue"},
     {id: indexList(), name:"Party Venue"},
 ];
+
+export const volunteerList = [
+    {id: indexList(), name:"Event Planning (weddings, parties, celebrations and recreation"},
+    {id: indexList(), name:"Equipment Setup (Stages, Dining and Events"},
+];
