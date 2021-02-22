@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import cart from "../resources/cart.png";
 
-let auth = false;
+let auth = true;
 const ifAuth = () => {
 
     if (auth) {
