@@ -3,6 +3,7 @@ body {
 };
 
 .donate {
+    overflow-y: auto;
     background: white;
     border-radius: 3px;
     box-align: center;
@@ -12,7 +13,7 @@ body {
     padding: 20px 20px 20px;
     width: 50%;
     min-width: 300px;
-    height: 900px;
+    height: 825px;
     -webkit-box-shadow: 0 0 200px $box_shadow_blue, 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -82,10 +83,6 @@ body {
 .donate__checkout {
     margin: 20px 0 0 0;
     text-align: center;
-}
-
-.donate__buttons {
-    
 }
 
 .donate p:first-child {
