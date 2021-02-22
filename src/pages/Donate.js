@@ -14,8 +14,17 @@ export default class Donate extends React.Component {
         totalDonation: 0,
     }
 
-    onSubmit_login = () => {
+    onSubmit_checkout = () => {
         history.push("/checkout");
+    }
+
+    onChange_donate = (e) => {
+        e.preventDefault();
+        const value = e.target.value.trim();
+        this.setState(() => ({
+            customDonate: value,
+            totalDonation: value,
+        }));
     }
 
     render() {
@@ -106,9 +115,10 @@ export default class Donate extends React.Component {
                                         <input
                                             type="number"
                                             name="donate"
-                                            pattern="[0-9]{10}"
+                                            value="Enter Donation Amount"   
                                             value={this.state.customDonate}
-                                            placeholder="Enter Donation Amount"
+                                            onChange={this.onChange_donate}
+                                            placeholder="Enter custom amount"
                                         />
                                     </p>
                                 </form>
@@ -119,17 +129,15 @@ export default class Donate extends React.Component {
 
                     <div className="donate__checkout">
 
-                        <form className="form__button">
-                            <p className="login___button">
+                            <p className="donate___button">
                                 <button
                                     type="submit"
-                                    name="login_button"
-                                    value="Login"
-                                    onClick={this.onSubmit_login}
+                                    name="checkout_button"
+                                    value="Checkout"
+                                    onClick={this.onSubmit_checkout}
                                     > Checkout
                                 </button>
                             </p>
-                        </form>
                     </div>
 
                 </div>
