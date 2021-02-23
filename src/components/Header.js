@@ -46,7 +46,7 @@ const Header = () => (
       </a>
       <div className="header__nav">
         <NavLink
-          to="/"
+          to="/home"
           activeClassName="is-active"
           exact={true}
           className="nav"
