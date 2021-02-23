@@ -13,7 +13,7 @@ app.use(express.static(publicPath));
 // app.get('*', (req, res) => {
 //     res.sendFile(path.join(publicPath, 'index.html'));
 // });
-let protected = ["favicon.ico"];
+let protected = ["favicon.png"];
 
 app.get("*", (req, res) => {
   if (protected.includes(publicPath)) {
