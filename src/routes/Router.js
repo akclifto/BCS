@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Account from "../pages/Account";
 import Checkout from "../pages/Checkout";
 import Donate from "../pages/Donate";
@@ -17,6 +17,7 @@ import VolunteerItemInfo from "../pages/VolunteerItemInfo";
 
 export default () => (
   <div>
+  <BrowserRouter>
     <LayoutTemplate>
       <Switch>
         <Route exact path="/" component={LandingDefault} />
@@ -34,5 +35,6 @@ export default () => (
         <Route component={PageNotFound} />
       </Switch>
     </LayoutTemplate>
+  </BrowserRouter>
   </div>
 );
