@@ -1,6 +1,5 @@
 import React from 'react';
 import history from '../components/history';
-import community from "../resources/happy-community-on-beach.jpg";
 
 
 export default class LandingDefault extends React.Component {
@@ -23,8 +22,7 @@ export default class LandingDefault extends React.Component {
                     </div>
     
                     <div className="landingDefault__right">
-                        <img className="landing__img" src={community} />
-                            fix this shit
+                          
                         <div className="landingDefault__signup">
                         <div className="login">
                             <h1>Join BCS Today</h1>
