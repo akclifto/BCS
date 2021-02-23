@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
-import AppRoutes from "./router/routes";
+import AppRouter from "./routes/router";
 
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== "production") {
 
 const App = () => (
   <BrowserRouter>
-    <AppRoutes />
+    <AppRouter />
   </BrowserRouter>
 );
 

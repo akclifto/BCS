@@ -49,12 +49,14 @@ module.exports = {
       components: path.resolve(__dirname, "src/components"),
       containers: path.resolve(__dirname, "src/containers"),
       pages: path.resolve(__dirname, "src/pages"),
+      resources: path.resolve(__dirname, "src/resources"),
+      routes: path.resolve(__dirname, "src/routes"),
+      styles: path.resolve(__dirname, "src/styles"),
+      
       // browser: path.resolve(
       //   __dirname,
       //   "node_modules/@types/react-router-dom/index.d.ts"
       // ),
-      routes: path.resolve(__dirname, "src/routes"),
-      styles: path.resolve(__dirname, "src/styles"),
     },
   },
   plugins: [
