@@ -148,11 +148,6 @@ button[type="submit"] {
   box-sizing: content-box;
 }
 
-button[type="submit"]:hover {
-  border: 3px solid;
-  border-color: $money_green;
-}
-
 button[type="submit"]:active {
   background: $lightblue;
   border-color: #e3f1f6;

@@ -14,7 +14,7 @@ export default class Signup extends React.Component {
   };
 
   onSubmit_signup = () => {
-    history.push("/");
+    history.push("/home");
   };
 
   render() {

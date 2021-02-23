@@ -8,7 +8,7 @@ export default class Login extends React.Component {
   };
 
   onSubmit_login = () => {
-    history.push("/");
+    history.push("/home");
   };
 
   render() {

@@ -4,6 +4,7 @@ import Account from "../pages/Account";
 import Checkout from "../pages/Checkout";
 import Donate from "../pages/Donate";
 import Landing from "../pages/Landing";
+import LandingDefault from "../pages/LandingDefault";
 import LayoutTemplate from "../containers/LayoutTemplate";
 import Login from "../pages/Login";
 import PageNotFound from "../pages/PageNotFound";
@@ -18,7 +19,8 @@ export default () => (
   <div>
     <LayoutTemplate>
       <Switch>
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/" component={LandingDefault} />
+        <Route exact path="/home" component={Landing} />
         <Route path="/account" component={Account} />
         <Route path="/checkout" component={Checkout} />
         <Route path="/donate" component={Donate} />

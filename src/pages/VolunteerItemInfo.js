@@ -55,7 +55,7 @@ const VolunteerItemInfo = () => {
               className="serviceItem__cart--button"
               onClick={() => {
                 alert(
-                  "Volunteer infomation to be added to account functionality."
+                  "Volunteer infomation to be added to account functionality and visible in Volunteering card on dashboard."
                 );
               }}
             >
