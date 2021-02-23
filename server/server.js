@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 
 // middleware:  some code that runs for each request. set it up with app.use();
 app.use(express.static(publicPath));
+// app.use(express.json());
 
 // app.get('*', (req, res) => {
 //     res.sendFile(path.join(publicPath, 'index.html'));
@@ -17,9 +18,9 @@ let protected = ["favicon.ico"];
 app.get("*", (req, res) => {
   if (protected.includes(publicPath)) {
     // Return the actual file
-    res.sendFile(path.join(publicPath, "../public"));
+    res.sendFile(path.join(publicPath, "..", "public", "index.html"));
   } else {
-    // Otherwise, redirect to /public/index.html
+    // Otherwise, redirect to /public/dist/index.html
     res.sendFile(path.join(publicPath, "index.html"));
   }
 });
