@@ -14,11 +14,11 @@ class Services extends React.Component {
 
   handleServiceClick(event) {
     // event.preventDefault();
-    console.log(this.state.serviceName);
+    // console.log(this.state.serviceName);
     this.setState(() => ({
       serviceName: event.target.value,
     }));
-    console.log(this.state.serviceName);
+    // console.log(this.state.serviceName);
   }
 
   render() {

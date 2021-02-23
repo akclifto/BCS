@@ -11,8 +11,8 @@ export default class Signup extends React.Component {
     paymentMethod: undefined,
   };
 
-  onSubmit_signup = () => {
-    history.push("/");
+  onSubmit_checkout = () => {
+    history.push("/home");
   };
 
   render() {
@@ -84,7 +84,7 @@ export default class Signup extends React.Component {
                 <button
                   type="submit"
                   name="submit_button"
-                  onClick={this.onSubmit_signup}
+                  onClick={this.onSubmit_checkout}
                 >
                   {" "}
                   Place Order

@@ -6,7 +6,7 @@ let auth = true;
 const ifAuth = () => {
   if (auth) {
     auth = false;
-    console.log(`ifAUTH: ${auth}`);
+    // console.log(`ifAUTH: ${auth}`);
     return (
       <NavLink
         to="/login"
@@ -22,7 +22,7 @@ const ifAuth = () => {
     );
   } else {
     auth = true;
-    console.log(`ifAUTH: ${auth}`);
+    // console.log(`ifAUTH: ${auth}`);
     return (
       <NavLink
         to="/"
