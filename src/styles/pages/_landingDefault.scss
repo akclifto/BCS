@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    overflow: auto;
+}
+
+.landingDefault__container {
+    width: 97%;
+    height: 97%;
+    margin: 10px;
+}
+
+.landingDefault {
+    display:grid;
+    grid-row: 1;
+    grid-column: 2;
+    border: 1px solid;
+    height: 500px;   
+}
+
+.landingDefault__left {
+    border: 1px solid;
+    float:left;
+    grid-row:1;
+    grid-column: 1/2;
+    height:inherit;
+}
+
+.landingDefault__left p {
+    position: right;
+    font-size: $l-size;
+}
+
+.landingDefault__left p:hover {
+    transition: 1.0s;
+    transform: scale(1.15);
+}
+
+.landingDefault__greet {
+    text-align: right;
+    float: right;
+    padding: 10px;
+    width: 350px;
+    margin: 150px 20px 100px 100px;
+    // border: 1px solid;
+}
+
+.landingDefault__right {
+    border: 1px solid;
+    position: left;
+    grid-row:1;
+    grid-column: 2/2;
+    height:inherit;
+    float: left;
+}
+
+.landingDefault__signup {
+    position: center;
+    width: 300px;
+    height: 200px;
+    margin: 140px 10px 100px 100px;
+    border: 1px solid;
+}
